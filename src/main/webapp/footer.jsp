@@ -1,10 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+<footer>
+    Evert Verrycken &copy; Communicatie, UC Leuven-Limburg
+</footer>

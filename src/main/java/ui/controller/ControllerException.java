@@ -1,4 +1,4 @@
-package ucll.project.ui.controller;
+package ui.controller;
 
 public class ControllerException extends RuntimeException {
 

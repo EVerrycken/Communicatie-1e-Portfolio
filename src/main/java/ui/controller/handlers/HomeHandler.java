@@ -1,4 +1,4 @@
-package ui.controller;
+package ui.controller.handlers;
 
 import ui.controller.RequestHandler;
 import javax.servlet.ServletException;
