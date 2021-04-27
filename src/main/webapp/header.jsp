@@ -9,5 +9,6 @@
             <li ${param.actual eq "Contact"?"id = \"actual\"":""}><a href="Controller?command=Contact">Contact</a></li>
         </ul>
     </nav>
+    <h1 class="weg"><span>${param.actual}</span></h1>
 </header>
 

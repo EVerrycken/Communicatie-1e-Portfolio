@@ -2,18 +2,19 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8">
-    <title>Competenties</title>
-</head>
-<body>
-<jsp:include page="header.jsp">
-    <jsp:param name="actual" value="Competenties"/>
+<jsp:include page="head.jsp">
+    <jsp:param name="title" value="Competenties"/>
 </jsp:include>
-<main>
-
-</main>
-<jsp:include page="footer.jsp"/>
+<body>
+<div id="container">
+    <jsp:include page="header.jsp">
+        <jsp:param name="actual" value="Competenties"/>
+    </jsp:include>
+    <main>
+        <h2>Competenties aan de hand van DLR's</h2>
+        <iframe src="images/1d-DLR.pdf" height="800" width="70%"></iframe>
+    </main>
+    <jsp:include page="footer.jsp"/>
+</div>
 </body>
 </html>

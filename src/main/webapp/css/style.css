@@ -1,0 +1,254 @@
+@CHARSET "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 90%;
+    color: #303d11;
+    background-color: #e6e6e6;
+}
+
+header {
+    background-color: #420C09;
+    border-radius: .5rem;
+}
+
+.weg {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    height: 2em;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 33%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    background-color: #B80F0A;
+    padding: .5rem 0 .5rem 0;
+    margin: .1rem;
+    border-radius: .5rem;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+}
+
+nav ul li a:hover,
+nav ul li#actual a {
+    color: #FCFBF7;
+    border: 1px solid #FCFBF7;
+}
+
+div#container {
+    background-color: #e6e6e6;
+    margin: auto;
+    margin-top: 10px;
+    width: 98%;
+}
+
+footer {
+    background-color: #420C09;
+    color: #FFFFFF;
+    border-radius: .5rem;
+    text-align: right;
+}
+
+header, main, footer {
+	padding: 15px 10px;
+}
+
+section {
+    background-color: #fff;
+    border: double 0.3rem #420C09;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: #420C09;
+    letter-spacing: 0.1rem;
+    padding-bottom: .5rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #610C04;
+    border-top: 1px solid;
+    border-left: 3px solid;
+    border-bottom: 1px solid;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+article {
+    margin-bottom: 1rem;
+}
+
+article + article {
+    border-top: 2px solid #610C04;
+}
+
+input[type=submit] {
+    background-color: #4190EB;
+    border: none;
+    border-radius: .2rem;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+th,td {
+	padding: 0.6em 1.2em 0 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+.alert-danger {
+    padding: 0.5em;
+    background-color: #f2dede;
+    border: 1px solid #b94a48;
+    color: #b94a48;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+.alert-danger ul {
+    list-style-type: none;
+}
+
+input,textarea {
+    border: 1px solid #303d11;
+    margin: 2px 0 8px 0;
+    outline: 0 none;
+    padding: 0.5em;
+    line-height:15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+video, iframe {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #420C09;
+    border-radius: .5rem;
+
+}
+
+
+/* mobile first */
+
+label,input,textarea {
+    display: block;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+}
+input {
+    height: 25px;
+}
+
+
+@media screen and (min-width: 900px) {
+    div#container {
+        max-width: 1500px;
+    }
+
+    nav ul {
+        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox; /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+        flex-wrap: nowrap;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0px;
+    }
+
+    .alert-danger {
+        width: 614px;
+    }
+
+    label, input, textarea {
+        display: inline-block;
+    }
+
+    label {
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        width: 400px;
+    }
+
+    input[type="submit"] {
+        margin-left: 112px;
+    }
+
+    textarea {
+        vertical-align: middle;
+    }
+}
+
+input#logout,
+input#change {
+    margin-left: 10px;
+}
+
+form#guideForm label {
+    text-align: left;
+    padding-left: 5px;
+    width: 80px;
+}
+
+form#filter label {
+    text-align: left;
+    padding-left: 5px;
+    width: 40px;
+}
+
+/* Javascript validation */
+span.error {
+    border: 1px solid #b94a48;
+    border-radius: 3px;
+    background-color: #f2dede;
+    padding: 3px 5px;
+    box-sizing: border-box;
+}
+
+span.hidden {
+    display: none;
+}
+
