@@ -11,8 +11,8 @@
         <jsp:param name="actual" value="Contact"/>
     </jsp:include>
     <main>
+        <h2>Contactgegevens</h2>
         <section>
-            <h2>Contactgegevens</h2>
             <p>evert.verrycken@student.ucll.be</p>
             <p>www.linkedin.com/in/evert-verrycken</p>
         </section>

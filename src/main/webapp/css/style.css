@@ -156,9 +156,15 @@ video, iframe {
     margin: 0 auto;
     border: 1px solid #420C09;
     border-radius: .5rem;
-
 }
 
+img {
+
+    border: 1px solid #420C09;
+    border-radius: 0.5rem;
+    max-width: 50%;
+    height: auto;
+}
 
 /* mobile first */
 
